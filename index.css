@@ -1,0 +1,18 @@
+h3.terminado{
+    color: green
+}
+
+button{
+    color: white;
+    background-color: rgb(11, 70, 230);
+    height: 30px;
+    margin-top: 1 rem;
+    padding: auto;
+    width: 40% ;
+}
+
+button:hover{
+    background-color: whitesmoke;
+    color: rgb(11, 70, 230);
+    font-weight: bold;
+}

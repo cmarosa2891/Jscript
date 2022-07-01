@@ -1,0 +1,141 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Archivos JS -->
+    <script src="Pruebas.js"></script>
+    <script src="gato.js"></script>
+    <script src="persona.js"></script>
+    <script src="nombreYoperaciones.js"></script>
+    <script src="sintaxisYvariables.js"></script>
+    <script src="sintaxisYvariables.js"></script>
+    <script src="diasSemana.js"></script>
+    <script src="integradorFacil.js"></script>
+    <script src="pequenaFuncion.js"></script>
+    <script src="peliculas.js"></script>
+    <script src="auto.js"></script>
+    <script src="objetoPeliculas.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>JS Practica</title>
+</head>
+
+<body>
+    <h1>JS_Practica</h1>
+    <h3 class="terminado"><strong>- NOMBRE Y OPERACIONES:</strong></h3>
+    <div>Pasos:</div>
+    <ol>
+        <li>Pedir nombre mediante prompt y disparar un alert con alg&uacute;n texto m&aacute;s</li>
+        <li>Pedir un n&uacute;mero y sumarlo a otro que est&eacute; en una variable</li>
+        <li>Pedir un n&uacute;mero y restarlo a otro que est&eacute; en una variable</li>
+        <li>Pedir un numero, luego otro y ambos sumarlos</li>
+    </ol>
+    <div><br></div>
+    <button onclick="inicio()">Numeros y Operadores</button>
+    <button onclick="init()">Ver resultados</button><br>
+    <button onclick="suma()">Sumar dos números</button>
+
+    <h3 class="terminado"><strong>-SINTAXIS Y VARIABLES:</strong></h3>
+    <div>Realizar una calculadora que pueda sumar, restar, dividir y multiplicar.<br><br>Pasos:</div>
+    <ol>
+        <li>Deber&aacute; ingresar un valor mediante un prompt</li>
+        <li>Deber&aacute; ingresar otro valor mediante otro prompt</li>
+        <li>Mostrar el resultado de cada operaci&oacute;n mediante distintos alert</li>
+    </ol>
+    <div><br><br></div>
+    <button onclick="sYv()">Sintaxis y Variables</button>
+
+    <h3  class="terminado"><strong>- D&Iacute;AS DE LA SEMANA:</strong></h3>
+    <ol>
+        <li>Crear un array con todos los d&iacute;as de la semana</li>
+        <li>Recorrerlos y mostrar cuando sea domingo o s&aacute;bado un mensaje en consola.</li>
+    </ol>
+    <div><br></div>
+    <button onclick="recorrer()">Días de la Semana</button>
+
+    <h3  class="terminado"><strong>INTEGRADOR F&Aacute;CIL:</strong></h3>
+    <div>Se tendr&aacute; que aplicar todo lo aprendido con los ejercicios anteriores:</div>
+    <ol>
+        <li>Deber&aacute; poder ingresar un d&iacute;a de la semana</li>
+        <li>Deber&aacute; poder compararlo con todos los d&iacute;as de la semana</li>
+        <li>Deber&aacute; evaluar si es un d&iacute;a de semana y fin de semana mediante un mensaje similar a: &quot;El
+            d&iacute;a es h&aacute;bil&quot; sino &quot;El d&iacute;a es fin de semana&quot;;<br>En caso de encontrar el
+            d&iacute;a utilizar la&nbsp;<strong>sentencia break&nbsp;</strong>y terminar el for.<br><br></li>
+    </ol>
+    <button onclick="integrador()">Días de la Semana</button>
+
+
+    <h3><strong>PEQUE&Ntilde;AS FUNCIONES:</strong></h3>
+    <ol>
+        <li>Crear una funci&oacute;n que pida nombre y apellido y lo muestre en la consola.</li>
+        <button onclick="nombreApellido()">Ingresar Nombre</button>
+        <li>Crear una funci&oacute;n que en base a un par&aacute;metro muestre los d&iacute;as h&aacute;biles o de fines
+            de semana en consola.</li>
+            <button onclick="evaluaDia()">Ingresar día</button>
+    </ol>
+   
+    <h3 style="color:red">PENDIENTE</h3>
+
+
+    <h3  class="terminado"><strong>CREAR UN ARRAY DE PEL&Iacute;CULAS:</strong></h3>
+    <ol>
+        <li>Crear una funci&oacute;n que agregue una pel&iacute;cula al array de pel&iacute;culas</li>
+        <li>La pel&iacute;cula deber&aacute; tener un ID y un T&iacute;tulo</li>
+        <li>Crear una funci&oacute;n que eval&uacute;e antes de agregar que la pel&iacute;cula no fue ingresada
+            previamente</li>
+        <li>Crear una funci&oacute;n que ordene las pel&iacute;culas por T&iacute;tulo y por ID</li>
+        <li>Crear una funci&oacute;n que elimine una pel&iacute;cula por su ID.</li>
+    </ol>
+
+    <button onclick="peliculas()">Peliculas</button>
+    <button onclick="ingresaPeli()">Pelicula a agregar</button>
+    <button onclick="revisaPeli()">Analizar Pelicula a agregar</button>
+    <button onclick="agregaPeli()">Agregar Pelicula ingresada</button>
+    <button onclick="ordenaPeli()">Ordenar Peliculas</button>
+    <button onclick="eliminaPeli()">Eliminar Peliculas</button>
+    <div><br></div>
+    <h3><strong>MEJORAR LA CALCULADORA SEPARANDO EN FUNCIONES CADA OPERACI&Oacute;N:</strong></h3>
+    <ol>
+        <li>Deber&aacute; poder ingresar 2 valores</li>
+        <li>Deber&aacute; poder ingresar que operaci&oacute;n quiere realizar</li>
+        <li>Cada operaci&oacute;n tendr&aacute; que ser una funci&oacute;n con los 2 par&aacute;metros para sumar,
+            restar, multiplicar o dividir;</li>
+        <li>Deber&aacute; mostrar el resultado de la operaci&oacute;n en consola.<br><br></li>
+    </ol>
+    <h3  class="terminado"><strong>HACER UN OBJETO QUE REPRESENTE UN AUTO:</strong></h3>
+    <ol>
+        <li>Deber&aacute; tener las propiedades color, modelo, patente, marca, prendido, velocidad y velocidad
+            m&aacute;xima</li>
+        <li>Deber&aacute; tener los m&eacute;todos encender, acelerar, mostrar velocidad actual, frenar y apagar</li>
+        <li>Por lo tanto mediante el m&eacute;todo acelerar tendr&aacute; que ir aumentando<br>la velocidad hasta llegar
+            a la velocidad m&aacute;xima.</li>
+    </ol>
+    <button onclick="auto.encender()">Encender</button>
+    <button onclick="auto.acelerar()">Acelerar</button>
+    <button onclick="auto.mostrarVelocidadActual()">Activar Velocímetro</button>
+    <button onclick="auto.frenar()">AFrenar</button>
+    <button onclick="auto.apagar()">Apagar</button>
+
+    <div><br></div>
+    <h3><strong>CREAR UNA FUNCI&Oacute;N QUE AGREGUE OBJETOS, PEL&Iacute;CULAS:</strong></h3>
+    <ol>
+        <li>El objeto pel&iacute;cula Deber&aacute; tener ID, titulo, descripci&oacute;n, a&ntilde;o, duraci&oacute;n,
+            actores, director</li>
+        <li>Deber&aacute; tener m&eacute;todos para editar todas sus propiedades, menos su ID, y para los actores
+            tendr&aacute; que ir agregando uno a uno.</li>
+    </ol>
+    <div><br></div>
+    <h3><strong>CREAR UNA FUNCI&Oacute;N PARA CARGAR AUTOS EN UN CAMI&Oacute;N:</strong></h3>
+    <ol>
+        <li>El auto tendr&aacute; que tener al menos patente y peso</li>
+        <li>El cami&oacute;n tiene un peso m&aacute;ximo de carga</li>
+        <li>El objeto cami&oacute;n deber&aacute; validar con cada auto ingresado si est&aacute; por debajo del peso o
+            si ya no lo puede agregar</li>
+        <li>Adem&aacute;s de almacenar los autos debe tener la posibilidad de validar que<br>no tenga patentes repetidas
+            y que me devuelva todas las patentes que tiene a bordo.</li>
+    </ol>
+
+</body>
+
+</html>
