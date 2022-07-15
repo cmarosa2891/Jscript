@@ -16,3 +16,12 @@ button:hover{
     color: rgb(11, 70, 230);
     font-weight: bold;
 }
+
+div.result{
+    color: rgb(11, 70, 230);  
+    font-weight: bold;
+    margin-top: 5px;
+    padding-top: 25px;
+    padding-left: 25px;
+    width: 50%;
+} 

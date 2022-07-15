@@ -25,15 +25,9 @@ console.log(`El resultado es ${fijo}-${numrest}=${parseInt(fijo)-parseInt(numres
 }
 
 function init() {
-    let p = document.createElement("p");
-    let pTexto = document.createTextNode(`El resultado es ${fijo}+${numsum}=${parseInt(fijo)+parseInt(numsum)}`);
-    p.appendChild(pTexto);
-    document.body.appendChild(p); 
+    let pTexto = document.getElementById("ej1").innerHTML = (`El resultado es ${fijo}+${numsum}=${parseInt(fijo)+parseInt(numsum)}`);
 
-    let p2 = document.createElement("p");
-    let p2Texto = document.createTextNode(`El resultado es ${fijo}-${numrest}=${parseInt(fijo)-parseInt(numrest)}`);
-    p.appendChild(p2Texto);
-    document.body.appendChild(p); 
+    document.getElementById("ej1").innerHTML = (`El resultado es ${fijo}-${numrest}=${parseInt(fijo)-parseInt(numrest)}`);
 }
 
 
@@ -43,4 +37,6 @@ let suma=()=>{
     let sum1=prompt('Ingrese el primer valor')
     let sum2=prompt('Ingrese el segundo valor')
     let resultado=alert(`La suma de ${sum1}+${sum2} es igual a ${parseInt(sum1)+parseInt(sum2)} `)
+
+    document.getElementById("ej1").innerHTML = (`La suma de ${sum1}+${sum2} es igual a ${parseInt(sum1)+parseInt(sum2)} `);
 }
